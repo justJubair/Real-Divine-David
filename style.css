@@ -1,0 +1,114 @@
+body{
+    background-color: lightgrey;
+}
+
+table, td, th{
+   
+    border: 1px solid white;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-spacing: 30px;
+}
+
+th, td{
+    padding: 15px;
+}
+
+tr:nth-child(even){
+    background-color: rgba(125, 75, 95, 0.4);
+}
+td:nth-child(even){
+    background-color:#D6EEEE;}
+th:nth-child(even){
+    background-color: white;
+}
+/*
+tr{
+    border-bottom: 1px solid black;
+} */
+
+tr:hover{background-color: snow;}
+
+ul{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    list-style-type:none;
+    overflow: hidden;
+
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+li{
+    float: left;
+}
+
+a:hover{
+    background-color: #111111;
+}
+
+.list{
+position:absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.listnormal li{
+    float:none
+}
+
+span{
+    color: darkcyan;
+    
+}
+
+.my{
+    background-color: pink;
+}
+
+.thing{
+    color: red;
+}
+
+#mainHeader{
+    background-color: darkolivegreen;
+    text-align: center;
+    margin-top: 50px;
+    padding: 16px;
+}
+
+.left{
+    background-color: dodgerblue;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.nuances{
+    background-color: black;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+
+.right{
+    background-color:mediumseagreen;
+    padding:20px;
+    float:left;
+    width: 20%
+}
+
+@media screen and (max-width:800px) {
+    .left, .nuances, .right{width: 100%;
+    }
+
