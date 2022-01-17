@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anotherworksheet</title>
+<link rel="stylesheet" href="style2.css">
+<meta name="viewport" content="width-device-widtj" initial-scale=1.0>
+<script src="https://kit.fontawesome.com/877142f5f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="anothersection">
+
+        <div class="mainheader"><h1>Hello world of 2021</h1></div>
+
+        <div class="menu">
+            <a class="sidebar" href="#">Link 1</a>
+            <a class="sidebar" href="#">Link 2</a>
+            <a class="sidebar" href="#">Link 3</a>
+            <a class="sidebar" href="#">Link 4</a>
+        </div>
+
+        <div class="main">
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem?</p>
+            
+        </div>
+
+        <div class="right">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, ratione.</p>
+        </div>
+        </div>
+<br>
+        <div>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <br>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+<br>
+        <div>
+            <p>choose your favourite way of death</p>
+            <form>
+                <input type="radio" id="Skin Cancer" name="fav_death" value="skinCancer">
+                <label for="Skin Cancer">Skin Cancer</label><br>
+            
+                <input type="radio" id="Poisoned by a loved one" name="fav_death" value="poisoned">
+                <label for="Poisoned">Poisoned by a loved one</label><br>
+
+                <input type="radio" id="In a stampede" name="fav_death" value="Stampede">
+                <label for="Stampede">In a stampede</label>
+            </form>
+        </div>
+<br>
+<br>
+       <div>
+           <p>Choose your vehicle:</p>
+        <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+            <label for="vehicle1">I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+            <label for="vehicle2">My father has a car</label><br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+        </form>
+       </div>
+
+       <div>
+        <p>Select your Priorities</p>
+           <form>
+               <label for="priority">Choose a priority</label>
+               <select id="priority" name="priority">
+                   <option value="sleep">Sleep</option>
+                   <option value="money">Money</option>
+                   <option value="relationships">Relationships</option>
+               </select>
+               <br>
+               <br>
+               <input type="submit"><br>
+               <br>
+               <input type="submit" formtarget="_blank" value="Submit to a new tab">
+               <br>
+               <br>
+               <br>
+               <button type="button" onclick="alert('Momento mori')">Don't click me</button>
+        
+               <h3>The detalist element</h3>
+               <p>Chose your all time favourite Sitcom</p>
+               
+               <!--doesn't work-->
+               <form autocomplete="on">
+                <input list="sitcoms" name="sitcoms">
+                <detalist id="sitcoms">
+                    <option value="F.R.I.E.N.D.S"></option>
+                    <option value="The Office"></option>
+                    <option value="Big bang theory"></option>
+                </detalist>
+               </form>
+
+               <h3>The output Element</h3>
+               <p>This element represents the result of a calculation</p>
+
+               <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100+
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output><br>
+                <br>
+                <input type="submit">
+
+                <h3>The password element</h3>
+
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="pwd">Password</label>
+                <br>
+                <input type="password" id="pwd" name="pwd">
+                <br>
+
+                <h3>The color picker element</h3>
+               
+                <label for="favcolor">Select your favourite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">   
+                <br>
+                <br>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <br>
+                <label for="birthday">Birthday time</label>
+                <input type="datetime-local" id="birthday" name="birthday"><br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jubair@gmail.com">
+                <br>
+                <h3>File upload element</h3><br>
+               <label for="myfile">Select a file</label>
+               <input type="file" id="myfile" name="myfile">
+                <br>
+                <p>How many F.R.I.E.N.D.S do you have?</p>
+
+                <label for="friends">Number of friends(between One to Five</label>
+                <input type="number" id="friends" name="friends" min="1" max="5" autofocus>
+                <input type="submit" value="submit">
+                <br>
+                <h3>When do you feel vulnerable</h3>
+                <label for="appt">Select a time</label>
+                <input type="time" id="appt" name="appt">
+                <br>
+                <P>Your phone number</P>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+8801686440582" required>
+                <input type="submit" value="Submit">
+                <br>
+                <h3>The readonly attribute</h3>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" value="Jubair" readonly>
+            
+            </form>
+            </form>
+<br>
+            <p>usage of Canvas</p>
+            <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+<br>
+<br>
+            <h3>Usage of SVG</h3>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+            </svg>
+
+       </div>
+
+       <video width="320px" height="240px" controls>
+        <source src="book.mp4" type="video/mp4">
+       </video>
+
+       
+       <iframe width="420" height="315" src="https://youtu.be/tgbNymZ7vqY?list=TLGG4Wwul8cHepMzMDEwMjAyMQautoplay=1&mute=1"></iframe>
+
+       <h2>Types of border</h2>
+       <P class="dotted">A dotted border</P>
+       <p class="dashed">A dashed border</p>
+       <p class="solid">A solid border</p>
+       <p class="double">A double border</p>
+       <p class="groove">A groove border</p>
+       <p class="ridge">A ridge border</p>
+       <p class="inset">A inset border</p>
+       <p class="outset">A outset border</p>
+       <p class="mix">A mixed border</p>
+       <p class="leftside">A left side border</p>
+
+       <p><del>Friends is the best sitcom</del>The office is the best sitcom</p>
+       <p class="linethrough">Lord of the rings is a must watch</p>
+
+       <p class="rtl">This text is written right to left direction</p>
+
+       <h3 class="shadow">The text shadow property</h3>
+
+       <h3 class="shadow1">The text shadow property</h3>
+
+       <div class="fontfamily">
+       <h3>The font family</h3>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, cumque dolorem quibusdam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore sed culpa fugiat saepe expedita nemo eveniet laudantium, delectus, totam omnis qui suscipit aspernatur beatae fuga ab aut mollitia quisquam libero? Sapiente minus vel facere ipsam vitae, quasi praesentium! Dolorum, odit? Qui unde eveniet eos culpa reprehenderit, asperiores quibusdam quo perspiciatis quae ab aliquid eaque sint dolor numquam eum? Placeat nesciunt minima odio voluptatem laudantium expedita eius a aliquid vel ea eaque esse error vitae modi quaerat tenetur corrupti cumque harum, numquam minus! Ad obcaecati necessitatibus, est libero minima sapiente similique quas, ipsam dignissimos qui magnam soluta earum perferendis quos consectetur exercitationem eveniet voluptatum ut minus. Commodi a esse dignissimos sequi iusto ullam fugit hic sit quidem! Doloribus, numquam! Harum est provident maiores laudantium a asperiores temporibus quasi adipisci dolorum dicta magni ex totam quam minus non porro id, doloribus, facilis sequi corrupti, saepe voluptatum. Adipisci odit, animi autem architecto molestiae aspernatur eveniet perspiciatis sequi accusantium quia quasi fugit suscipit nemo, minima possimus veniam amet qui ducimus blanditiis hic quisquam enim. Neque molestias consequuntur ducimus obcaecati aperiam incidunt officiis temporibus sint eum molestiae facilis quod, ipsum quibusdam rerum reiciendis! Eligendi quaerat repellat enim ab eveniet nihil est eum modi ratione nesciunt. pariatur quas ratione! Ipsa ab quidem dolore nulla? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nemo, consequuntur dolor consequatur aliquid velit, nihil sint, corrupti ducimus quam aperiam mollitia repudiandae? Saepe voluptate, autem fugiat, eum beatae natus blanditiis repellat iusto hic, nulla atque aliquam amet! Adipisci porro nemo alias consequuntur cupiditate illo iure cum harum ad a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptates quam, enim nisi velit totam repudiandae rem molestias doloribus dolorum ipsa fugit aliquam ut veritatis in beatae odit hic cum omnis deleniti sequi tempore ab similique tenetur? Expedita sunt consequuntur eaque veniam ratione iste saepe soluta quia voluptatibus nulla? Ab distinctio blanditiis illum facilis iste qui consequatur quisquam necessitatibus. Quod, maxime? Fugit explicabo vitae voluptatum, veritatis numquam recusandae natus cupiditate? Odit rem cumque, commodi sint voluptatibus deserunt. Animi magni, quam odio unde error dicta est sit, similique maiores veniam fuga iure repellendus a amet quibusdam modi, atque soluta neque natus!</p>
+       </div>
+
+       <div class="sidebar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis, facilis officia provident, non quaerat ab architecto nemo quas velit est consequatur sint voluptatem fugit sed enim consectetur odit suscipit nihil magni itaque libero quos. Reprehenderit deleniti architecto laborum at minima nam, nobis similique tempora reiciendis magni saepe harum natus.</p>
+    </div>
+
+       <div class="fontfamily1">
+        <h3>The font family</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, cumque dolorem quibusdam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore sed culpa fugiat saepe expedita nemo eveniet laudantium, delectus, totam omnis qui suscipit aspernatur beatae fuga ab aut mollitia quisquam libero? Sapiente minus vel facere ipsam vitae, quasi praesentium! Dolorum, odit? Qui unde eveniet eos culpa reprehenderit, asperiores quibusdam quo perspiciatis quae ab aliquid eaque sint dolor numquam eum? Placeat nesciunt minima odio voluptatem laudantium expedita eius a aliquid vel ea eaque esse error vitae modi quaerat tenetur corrupti cumque harum, numquam minus! Ad obcaecati necessitatibus, est libero minima sapiente similique quas, ipsam dignissimos qui magnam soluta earum perferendis quos consectetur exercitationem eveniet voluptatum ut minus. Commodi a esse dignissimos sequi iusto ullam fugit hic sit quidem! Doloribus, numquam! Harum est provident maiores laudantium a asperiores temporibus quasi adipisci dolorum dicta magni ex totam quam minus non porro id, doloribus, facilis sequi corrupti, saepe voluptatum. Adipisci odit, animi autem architecto molestiae aspernatur eveniet perspiciatis sequi accusantium quia quasi fugit suscipit nemo, minima possimus veniam amet qui ducimus blanditiis hic quisquam enim. Neque molestias consequuntur ducimus obcaecati aperiam incidunt officiis temporibus sint eum molestiae facilis quod, ipsum quibusdam rerum reiciendis! Eligendi quaerat repellat enim ab eveniet nihil est eum modi ratione nesciunt. pariatur quas ratione! Ipsa ab quidem dolore nulla? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nemo, consequuntur dolor consequatur aliquid velit, nihil sint, corrupti ducimus quam aperiam mollitia repudiandae? Saepe voluptate, autem fugiat, eum beatae natus blanditiis repellat iusto hic, nulla atque aliquam amet! Adipisci porro nemo alias consequuntur cupiditate illo iure cum harum ad a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptates quam, enim nisi velit totam repudiandae rem molestias doloribus dolorum ipsa fugit aliquam ut veritatis in beatae odit hic cum omnis deleniti sequi tempore ab similique tenetur? Expedita sunt consequuntur eaque veniam ratione iste saepe soluta quia voluptatibus nulla? Ab distinctio blanditiis illum facilis iste qui consequatur quisquam necessitatibus. Quod, maxime? Fugit explicabo vitae voluptatum, veritatis numquam recusandae natus cupiditate? Odit rem cumque, commodi sint voluptatibus deserunt. Animi magni, quam odio unde error dicta est sit, similique maiores veniam fuga iure repellendus a amet quibusdam modi, atque soluta neque natus!</p>
+        </div>
+
+        <h3>Font Awesome icon library</h3>
+
+        <i class="fas fa-cloud" style="font-size: 24px; color: skyblue;"></i>
+        <i class="fas fa-heart" style="font-size: 50px;"></i>
+        <i class="fas fa-file" style="font-size: 60px;"></i>
+       
+       <h4>link decoration with css</h4>
+       <a href="#unknown">Don't click me</a>
+
+       <h3>link as a button</h3>
+        <a class="two" href="https://www.google.comm">This is a link</a>
+       
+        <h3>Some varients of links</h3>
+        <p><a class="one" href="#default" target="_blank">Change of color</a></p><br>
+        <p><a class="three" href="#unknown">Change of size</a></p><br>
+        <p><a class="four" href="#default1">Change of background color</a></p><br>
+        <p><a class="five" href="#default3">Change of font-family</a></p><br>
+        <p><a class="six" href="#default5">Change of text-decoratin</a></p>
+       
+       <nav>
+           <div class="navigation">
+               <ul class="navbar">
+                   <li><a class="bar" href="#Home">Home</a></li>
+                   <li><a class="bar" href="#Home">Contact</a></li>
+                   <li><a class="bar" href="#Home">clients</a></li>
+                   <li><a class="bar" href="#Home">About</a></li>
+               </ul>
+           </div>
+       </nav>
+       <div class="cursor">
+       <h3>The cursor property</h3>
+       <p><b>Mouse over the words to change the cursor.</b></p>
+       <span class="auto">auto</span><br>
+       <span class="crosshair">crosshair</span><br>
+       <span class="default">default</span><br>
+       <span class="resize">e-resize</span><br>
+       <span class="help">help</span><br>
+       <span class="move">move</span><br>
+       <span class="nresize">n-resize</span><br>
+       <span class="neresize">ne-resize</span><br>
+       <span class="nwresize">nw-resize</span><br>
+       <span class="pointer">pointer</span><br>
+       <span class="progress">progress</span><br>
+       <span class="sresize">s-resize</span><br>
+       <span class="seresize">se-resize</span><br>
+       <span class="swresize">sw-resize</span><br>
+       <span class="text">text</span><br>
+       <span class="wresize">w-resize</span><br>
+       <span class="wait">wait</span><br>
+       </div>
+
+       <h2>A random Table chart</h2>
+       
+       <table id="random">
+           <tr>
+               <th>Company</th>
+               <th>Product</th>
+               <th>Country</th>
+           </tr>
+           <tr>
+               <td>Tesla</td>
+               <td>Protoype self-driven cars</td>
+               <td>USA</td>
+           </tr>
+           <tr>
+               <td>Apple</td>
+               <td>Luxury Gadgets</td>
+               <td>USA</td>
+           </tr>
+           <tr>
+               <td>Facebook</td>
+               <td>Digital Advertisement</td>
+               <td>USA</td>
+           </tr>
+           <tr>
+                <td>Microsoft</td>
+                <td>Storage of information</td>
+                <td>USA</td>
+           </tr>
+           <tr>
+               <td>Amazon</td>
+               <td>Daraz of USA</td>
+               <td>USA</td>
+           </tr>
+           <tr>
+               <td>Daraz</td>
+               <td>Amazon of Pakistan</td>
+               <td>Pakistan</td>
+           </tr>
+           <tr>
+            <td>Amazon</td>
+            <td>Daraz of USA</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Daraz</td>
+            <td>Amazon of Pakistan</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>Daraz of USA</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Daraz</td>
+            <td>Amazon of Pakistan</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>Daraz of USA</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Daraz</td>
+            <td>Amazon of Pakistan</td>
+            <td>Pakistan</td>
+        </tr>
+       </table>
+
+       <h2>CSS max-widht property:</h2>
+
+       <div class="ex1"><p>This div element had width: 500px;</p></div>
+<br>
+       <div class="ex2"><p>This div element has max-width: 500px;</p></div>
+       <p>Drag the browser window to smaller than 500px wide, to see the difference between these to div's.</p>
+       
+       <h2>Image text</h2>
+       <p>Add some text to an image in the top left corner:</p>
+
+       <div class="container">
+           <img src="background.jpg" alt="abstract image"
+           width="1000px" height="300px">
+           <div class="topleft">Top left</div>
+       </div>
+
+
+
+        <div style="margin-top: 500px;"></div>
+</body>
+</html>
